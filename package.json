@@ -1,0 +1,22 @@
+{
+  "name": "nc-messenger-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "knexfile.js",
+  "dependencies": {
+    "knex": "^0.19.5",
+    "pg": "^7.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup-dbs": "psql -f db/setup.sql",
+    "migrate-make": "knex migrate:make",
+    "migrate-latest": "knex migrate:latest",
+    "migrate-rollback": "knex migrate:rollback",
+    "seed": "knex seed:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
