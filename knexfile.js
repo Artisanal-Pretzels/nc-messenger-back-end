@@ -1,7 +1,9 @@
 const dbConfig = {
 	client: "pg",
 	connection: {
-		database: "nc_messenger_test"
+		database: "nc_messenger_test",
+		username: "oem",
+		password: "password"
 	},
 	seeds: {
 		directory: "./db/seeds"
